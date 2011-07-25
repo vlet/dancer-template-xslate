@@ -68,6 +68,9 @@ You can configure L<Text::Xslate> :
         module:
           # to keep partial compatibility
           - Text::Xslate::Bridge::TT2
+        function:
+          # string eval'ed
+          foobar: "\&::foobar"
 
 =head1 SEE ALSO
 
