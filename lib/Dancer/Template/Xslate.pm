@@ -20,6 +20,12 @@ sub init {
         %{$self->config},
     );
 
+    if ( exists $args{function} ) {
+        foreach my $f ( keys %{ $args{'function'} } ) {
+            eval ' $args{"function"}{$f} = ' . $args{'function'}{$f};
+        }
+    }
+
     $_engine = Text::Xslate->new(%args);
 }
 
