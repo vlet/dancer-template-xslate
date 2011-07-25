@@ -63,11 +63,11 @@ You can configure L<Text::Xslate> :
     template: xslate
     engines:
       xslate:
-        cache_dir  => "/www/../xslate_cache",
-        cache      => 1,
-        module =>
-          - Text::Xslate::Bridge::TT2 # to keep partial compatibility
-
+        cache_dir: "/www/../xslate_cache"
+        cache: 1
+        module:
+          # to keep partial compatibility
+          - Text::Xslate::Bridge::TT2
 
 =head1 SEE ALSO
 
